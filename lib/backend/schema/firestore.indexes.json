@@ -1,0 +1,74 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "podcast",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "p_category",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "p_createdAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "podcast",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "p_category",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "p_listened_by",
+          "arrayConfig": "CONTAINS"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "podcast",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "p_createdBy",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "p_createdAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "podcast",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "p_listened_by",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "p_listened_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "podcast",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "p_liked_by",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "p_listened_at",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ]
+}
